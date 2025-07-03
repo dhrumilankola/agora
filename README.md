@@ -91,6 +91,30 @@ Agora isn't just another learning app. It's a **conversation-first platform** th
 - ElevenLabs account with API key
 - ElevenLabs Conversational AI agent
 
+### 🔑 ElevenLabs API Setup
+
+Before you can use Agora, you need to obtain API credentials from ElevenLabs:
+
+#### Step 1: Create ElevenLabs Account
+1. **Sign up** at [ElevenLabs](https://elevenlabs.io/)
+2. **Verify your email** and complete account setup
+3. **Choose a plan** - Free tier available for testing, paid plans for production use
+
+#### Step 2: Get Your API Key
+1. **Go to Profile Settings** in your ElevenLabs dashboard
+2. **Navigate to the API tab**
+3. **Copy your API Key** (starts with `sk_`)
+4. **Keep it secure** - treat it like a password
+
+#### Step 3: Create Conversational AI Agent
+1. **Go to Conversational AI** section in ElevenLabs dashboard
+2. **Click "Create Agent"** 
+3. **Configure basic settings**:
+   - Name: "Agora Learning Assistant" (or your preference)
+   - Description: "AI assistant for educational conversations"
+4. **Copy the Agent ID** (starts with `agent_`)
+5. **Keep this ID** - you'll need it for configuration
+
 ### Technology Stack
 - **Frontend**: Next.js 14, React 18, TypeScript
 - **Styling**: Tailwind CSS, Framer Motion  
@@ -110,9 +134,9 @@ npm install
 ```bash
 # Copy and configure environment variables
 cp .env.example .env.local
-# Then edit .env.local with your actual values:
-# ELEVENLABS_API_KEY=your_elevenlabs_api_key
-# ELEVENLABS_AGENT_ID=your_agent_id
+# Then edit .env.local with your actual values from ElevenLabs setup:
+# ELEVENLABS_API_KEY=sk_your_actual_api_key_from_step_2
+# ELEVENLABS_AGENT_ID=agent_your_actual_agent_id_from_step_3
 ```
 
 3. **Launch & Explore**
